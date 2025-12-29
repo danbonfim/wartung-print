@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wartung Print | Especialistas em Manutenção de Máquinas Gráficas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-img {
+      height: 50px;
+      width: auto;
+    }
+    .logo-text {
+      color: #003d82;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .btn-primary {
+      background: #0066cc;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .btn-secondary {
+      background: transparent;
+      color: #0066cc;
+      padding: 12px 30px;
+      border: 2px solid #0066cc;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(135deg, #003d82 0%, #0066cc 100%);
+      color: white;
+      padding: 100px 40px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    .cta-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    .services {
+      padding: 80px 40px;
+      text-align: center;
+    }
+    .services h2 {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .service-card {
+      padding: 30px;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
+    .service-card h3 {
+      margin: 20px 0 10px;
+      color: #003d82;
+    }
+    .service-card p {
+      color: #666;
+      font-size: 14px;
+    }
+    footer {
+      background: #333;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+    footer p {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <svg class="logo-img" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#1a5ebf;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#87ceeb;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <!-- Máquina -->
+        <path d="M 20 60 Q 30 40 60 35 L 120 30 Q 140 28 150 45 L 150 75 Q 140 90 120 95 L 60 100 Q 30 100 20 80 Z" fill="url(#grad1)" stroke="#003d82" stroke-width="2"/>
+        <!-- Engrenagem -->
+        <g transform="translate(140, 70)">
+          <circle cx="0" cy="0" r="18" fill="none" stroke="#003d82" stroke-width="2"/>
+          <circle cx="0" cy="0" r="10" fill="white"/>
+          <path d="M 0,-18 L 8,-12 L 10,-20 L 6,-14 L 14,-10 L 6,-8 L 10,-2 L 4,-8 L 2,4 L -4,-8 L -10,-2 L -6,-8 L -14,-10 L -6,-14 L -10,-20 L -8,-12 Z" fill="#003d82"/>
+        </g>
+        <!-- Linhas de movimento -->
+        <g stroke="#87ceeb" stroke-width="1.5" opacity="0.7">
+          <line x1="10" y1="45" x2="30" y2="42"/>
+          <line x1="5" y1="55" x2="25" y2="53"/>
+          <line x1="8" y1="65" x2="28" y2="64"/>
+        </g>
+      </svg>
+      <span class="logo-text">Wartung Print</span>
+    </div>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="btn-primary">Solicitar Orçamento</button>
+  </header>
+
+  <section class="hero">
+    <h1>Manutenção Especializada em Máquinas Gráficas</h1>
+    <p>Maximize a disponibilidade e eficiência das suas máquinas gráficas com nossos serviços de manutenção preventiva e preditiva</p>
+    <div class="cta-buttons">
+      <button class="btn-primary">Fale com um Especialista</button>
+      <button class="btn-secondary">Conheça Nossos Serviços</button>
+    </div>
+  </section>
+
+  <section class="services" id="servicos">
+    <h2>Nossos Serviços</h2>
+    <p style="color: #666; margin-bottom: 40px;">Oferecemos soluções completas de manutenção para máquinas gráficas</p>
+    
+    <div class="service-grid">
+      <div class="service-card">
+        <div style="font-size: 32px;">🔍</div>
+        <h3>Manutenção Preventiva</h3>
+        <p>Inspeções periódicas, limpeza, lubrificação e ajustes preventivos para evitar paradas não programadas.</p>
+      </div>
+      <div class="service-card">
+        <div style="font-size: 32px;">📊</div>
+        <h3>Manutenção Preditiva</h3>
+        <p>Monitoramento contínuo de parâmetros de funcionamento e detecção antecipada de falhas.</p>
+      </div>
+      <div class="service-card">
+        <div style="font-size: 32px;">⚡</div>
+        <h3>Assistência 24/7</h3>
+        <p>Suporte técnico especializado disponível para resolver problemas de forma rápida.</p>
+      </div>
+      <div class="service-card">
+        <div style="font-size: 32px;">📦</div>
+        <h3>Peças Originais</h3>
+        <p>Fornecimento de peças genuínas e consumíveis com garantia total.</p>
+      </div>
+      <div class="service-card">
+        <div style="font-size: 32px;">👥</div>
+        <h3>Treinamento</h3>
+        <p>Capacitação da sua equipe em manutenção autônoma e operação otimizada.</p>
+      </div>
+      <div class="service-card">
+        <div style="font-size: 32px;">🔧</div>
+        <h3>Consultoria</h3>
+        <p>Análise do fluxo de produção e otimização de processos para aumentar produtividade.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: #f0f0f0; padding: 60px 40px; text-align: center;" id="diferenciais">
+    <h2 style="margin-bottom: 40px;">Por Que Escolher a Wartung Print?</h2>
+    <div class="service-grid">
+      <div class="service-card" style="background: white;">
+        <h3>🎯 100% Especializado</h3>
+        <p>Conhecimento profundo em máquinas gráficas modernas.</p>
+      </div>
+      <div class="service-card" style="background: white;">
+        <h3>⏱️ Resposta Rápida</h3>
+        <p>Equipe disponível para atendimento emergencial imediato.</p>
+      </div>
+      <div class="service-card" style="background: white;">
+        <h3>📈 Mentalidade Preventiva</h3>
+        <p>Redução de 60-80% em paradas não programadas.</p>
+      </div>
+      <div class="service-card" style="background: white;">
+        <h3>💼 Contratos Flexíveis</h3>
+        <p>Planos customizados conforme sua necessidade.</p>
+      </div>
+      <div class="service-card" style="background: white;">
+        <h3>🌍 Cobertura Nacional</h3>
+        <p>Atendemos em todo o Brasil com deslocamento de técnicos.</p>
+      </div>
+      <div class="service-card" style="background: white;">
+        <h3>✅ Garantia Total</h3>
+        <p>Todos os serviços com garantia escrita e transparência.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <h2 style="margin-bottom: 30px;">Entre em Contato</h2>
+    <p><strong>Email:</strong> contato@wartungprint.com.br</p>
+    <p><strong>Telefone:</strong> (11) 99999-9999</p>
+    <p><strong>WhatsApp:</strong> (11) 99999-9999</p>
+    <p style="margin-top: 30px; border-top: 1px solid #555; padding-top: 20px;">
+      © 2025 Wartung Print. Todos os direitos reservados.
+    </p>
+  </footer>
+</body>
+</html>
